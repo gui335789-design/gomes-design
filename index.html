@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomes Design | Design que destaca sua marca</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080d18;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: #0d1729;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #45a5ff;
+}
+
+.logo span {
+  color: white;
+  font-size: 13px;
+  display: block;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #45a5ff;
+}
+
+section {
+  padding: 75px 8%;
+}
+
+.hero {
+  text-align: center;
+  padding: 110px 8%;
+  background: linear-gradient(135deg, #10294b, #080d18);
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 52px);
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #45a5ff;
+}
+
+.hero p {
+  color: #c5d1e0;
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+.btn {
+  display: inline-block;
+  background: #1689ed;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0872ce;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #aab8ca;
+  margin-bottom: 35px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #111d31;
+  padding: 25px;
+  border: 1px solid #243b5c;
+  border-radius: 12px;
+}
+
+.service-card h3 {
+  color: #45a5ff;
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  color: #bdc9d8;
+  font-size: 14px;
+}
+
+.price {
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-box {
+  max-width: 700px;
+  margin: auto;
+  background: #111d31;
+  padding: 28px;
+  border-radius: 12px;
+}
+
+.form-box label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: bold;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #344a68;
+  border-radius: 7px;
+  background: #091323;
+  color: white;
+  font-size: 15px;
+}
+
+.form-box textarea {
+  resize: vertical;
+}
+
+.service-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.service-option {
+  background: #091323;
+  border: 1px solid #344a68;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.service-option label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.service-option input {
+  width: auto;
+}
+
+.total {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #45a5ff;
+  font-weight: bold;
+}
+
+.form-box button {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.social {
+  text-align: center;
+  background: #0d1729;
+}
+
+.social a {
+  color: #45a5ff;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.achadinhos {
+  text-align: center;
+  background: linear-gradient(135deg, #10294b, #0d1729);
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.achadinhos p {
+  color: #c5d1e0;
+  margin: 15px auto 25px;
+  max-width: 600px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #050912;
+  color: #9eacbd;
+  font-size: 13px;
+}
+
+footer a {
+  color: #45a5ff;
+  text-decoration: none;
+}
+
+@media(max-width: 600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+
+  .form-box {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    GD
+    <span>GOMES DESIGN</span>
+  </div>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#pedido">Solicitar arte</a>
+    <a href="#redes">Redes sociais</a>
+    <a href="#achadinhos">Achadinhos</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <h1>Sua ideia merece uma <span>arte incrível.</span></h1>
+  <p>
+    Criatividade, qualidade e personalidade para destacar
+    seu negócio e transformar suas ideias em realidade.
+  </p>
+  <a class="btn" href="#pedido">Solicitar minha arte</a>
+</section>
+
+<section id="servicos">
+  <h2 class="section-title">Nossos serviços</h2>
+  <p class="section-subtitle">
+    Confira nossas opções e escolha a arte ideal para você.
+  </p>
+
+  <div class="services">
+    <div class="service-card">
+      <h3>Cartão de visita</h3>
+      <p>Apresente seu negócio com uma identidade profissional.</p>
+      <span class="price">R$ 30,00</span>
+    </div>
+
+    <div class="service-card">
+      <h3>Convites</h3>
+      <p>Convites personalizados para ocasiões especiais.</p>
+      <span class="price">R$ 27,00</span>
+    </div>
+
+    <div class="service-card">
+      <h3>Flyer / Folder</h3>
+      <p>Divulgue seus produtos, serviços e promoções.</p>
+      <span class="price">R$ 28,00</span>
+    </div>
+
+    <div class="service-card">
+      <h3>Logotipo</h3>
+      <p>Crie uma identidade visual para destacar sua marca.</p>
+      <span class="price">R$ 30,00</span>
+    </div>
+
+    <div class="service-card">
+      <h3>Cardápio</h3>
+      <p>Apresente seus produtos de maneira organizada e visual.</p>
+      <span class="price">R$ 28,00</span>
+    </div>
+
+    <div class="service-card">
+      <h3>Post para Instagram</h3>
+      <p>Artes personalizadas para suas redes sociais.</p>
+      <span class="price">R$ 25,00</span>
+    </div>
+
+    <div class="service-card">
+      <h3>Placa Pix QR Code</h3>
+      <p>Uma placa personalizada para facilitar seus pagamentos.</p>
+      <span class="price">R$ 15,00</span>
+    </div>
+  </div>
+</section>
+
+<section id="pedido">
+  <h2 class="section-title">Solicite sua arte</h2>
+  <p class="section-subtitle">
+    Preencha as informações e envie seu pedido pelo WhatsApp.
+  </p>
+
+  <div class="form-box">
+    <form id="pedidoForm">
+
+      <label for="nome">Seu nome:</label>
+      <input type="text" id="nome" required placeholder="Digite seu nome">
+
+      <label>Escolha os serviços desejados:</label>
+
+      <div class="service-options" id="opcoes-servicos">
+        <div class="service-option">
+          <label><input type="checkbox" value="30" data-name="Cartão de visita"> Cartão de visita — R$ 30</label>
+        </div>
+        <div class="service-option">
+          <label><input type="checkbox" value="27" data-name="Convites"> Convites — R$ 27</label>
+        </div>
+        <div class="service-option">
+          <label><input type="checkbox" value="28" data-name="Flyer / Folder"> Flyer / Folder — R$ 28</label>
+        </div>
+        <div class="service-option">
+          <label><input type="checkbox" value="30" data-name="Logotipo"> Logotipo — R$ 30</label>
+        </div>
+        <div class="service-option">
+          <label><input type="checkbox" value="28" data-name="Cardápio"> Cardápio — R$ 28</label>
+        </div>
+        <div class="service-option">
+          <label><input type="checkbox" value="25" data-name="Post para Instagram"> Post para Instagram — R$ 25</label>
+        </div>
+        <div class="service-option">
+          <label><input type="checkbox" value="15" data-name="Placa Pix QR Code"> Placa Pix QR Code — R$ 15</label>
+        </div>
+      </div>
+
+      <div class="total">
+        Total estimado: R$ <span id="total">0,00</span>
+      </div>
+
+      <label for="tamanho">Tamanho da arte:</label>
+      <input type="text" id="tamanho" placeholder="Ex.: A4, 1080x1080 ou não sei">
+
+      <label for="formato">Formato:</label>
+      <select id="formato">
+        <option>Quadrado</option>
+        <option>Vertical</option>
+        <option>Horizontal</option>
+        <option>Personalizado</option>
+      </select>
+
+      <label for="prazo">Prazo desejado:</label>
+      <select id="prazo">
+        <option>3 dias</option>
+        <option>1 semana</option>
+        <option>1 mês</option>
+      </select>
+
+      <label for="observacoes">Conte um pouco sobre sua ideia:</label>
+      <textarea id="observacoes" rows="4" placeholder="Descreva como deseja sua arte..."></textarea>
+
+      <label for="referencia">Possui uma imagem de referência?</label>
+      <input type="file" id="referencia" accept="image/*">
+
+      <button class="btn" type="submit">
+        Enviar meu pedido pelo WhatsApp
+      </button>
+
+      <p style="color:#9eacbd;font-size:12px;margin-top:12px;">
+        Se selecionar uma imagem de referência, lembre-se de anexá-la
+        manualmente na conversa do WhatsApp.
+      </p>
+    </form>
+  </div>
+</section>
+
+<section class="social" id="redes">
+  <h2 class="section-title">Conecte-se com a Gomes Design</h2>
+  <p class="section-subtitle">
+    Acompanhe nossos trabalhos e novidades.
+  </p>
+
+  <a href="https://www.instagram.com/gomes_.design?dlrf=aTJzZTJ6bDR3dWlv" target="_blank" rel="noopener">
+    Instagram
+  </a>
+
+  <a href="https://www.tiktok.com/@gomes_designn?_r=1&_t=ZS-9BBuysbEgYH" target="_blank" rel="noopener">
+    TikTok
+  </a>
+</section>
+
+<section id="achadinhos">
+  <div class="achadinhos" style="padding:35px 20px;">
+    <h2 class="section-title">🛍️ Achadinhos do Gominho</h2>
+    <p>
+      Quer economizar e encontrar ofertas incríveis?
+      Entre no nosso grupo e confira os achadinhos e promoções!
+    </p>
+    <a class="btn" href="https://chat.whatsapp.com/D0YB2HKbwXp7fzvJ9dnxp5?s=cl&p=a&iam=2" target="_blank" rel="noopener">
+      Entrar no grupo de promoções
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Gomes Design — Todos os direitos reservados.</p>
+  <p>Precisa de ajuda? <a href="https://wa.me/5521996368735" target="_blank" rel="noopener">Fale conosco pelo WhatsApp</a></p>
+</footer>
+
+<script>
+const checkboxes = document.querySelectorAll(
+  '#opcoes-servicos input[type="checkbox"]'
+);
+
+const totalElement = document.getElementById('total');
+
+function atualizarTotal() {
+  let total = 0;
+
+  checkboxes.forEach(function(item) {
+    if (item.checked) {
+      total += Number(item.value);
+    }
+  });
+
+  totalElement.textContent = total.toFixed(2).replace('.', ',');
+}
+
+checkboxes.forEach(function(item) {
+  item.addEventListener('change', atualizarTotal);
+});
+
+document.getElementById('pedidoForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const nome = document.getElementById('nome').value.trim();
+  const tamanho = document.getElementById('tamanho').value;
+  const formato = document.getElementById('formato').value;
+  const prazo = document.getElementById('prazo').value;
+  const observacoes = document.getElementById('observacoes').value;
+
+  const selecionados = [];
+
+  checkboxes.forEach(function(item) {
+    if (item.checked) {
+      selecionados.push(
+        item.dataset.name + ' — R$ ' +
+        Number(item.value).toFixed(2).replace('.', ',')
+      );
+    }
+  });
+
+  if (selecionados.length === 0) {
+    alert('Selecione pelo menos um serviço.');
+    return;
+  }
+
+  let total = 0;
+  checkboxes.forEach(function(item) {
+    if (item.checked) total += Number(item.value);
+  });
+
+  const mensagem =
+    'Olá! Vim pelo site da Gomes Design e gostaria de solicitar uma arte.%0A%0A' +
+    '*Nome:* ' + encodeURIComponent(nome) + '%0A' +
+    '*Serviços:* ' + encodeURIComponent(selecionados.join(', ')) + '%0A' +
+    '*Total estimado:* R$ ' + encodeURIComponent(total.toFixed(2).replace('.', ',')) + '%0A' +
+    '*Tamanho:* ' + encodeURIComponent(tamanho || 'A combinar') + '%0A' +
+    '*Formato:* ' + encodeURIComponent(formato) + '%0A' +
+    '*Prazo:* ' + encodeURIComponent(prazo) + '%0A' +
+    '*Observações:* ' + encodeURIComponent(observacoes || 'Nenhuma') + '%0A%0A' +
+    'Se eu tiver uma imagem de referência, vou anexá-la nesta conversa.';
+
+  window.open('https://wa.me/5521996368735?text=' + mensagem, '_blank');
+});
+</script>
+
+</body>
+</html>
